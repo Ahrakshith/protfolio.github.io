@@ -19,19 +19,19 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #131929;
+    background-color: #d5e0ff;
     /* White background */
 }
 
 /* Header Section */
 header {
-    background-color: #040517;
+    background-color: #d5e0ff;
     /* Dark background color for header */
     padding: 20px 0;
 }
 
 nav h1 {
-    color: yellow;
+    color: #f9c01b;
     /* Header text color */
 }
 
@@ -45,8 +45,9 @@ nav {
 }
 
 nav h1 {
-    color: #fff;
+    color: #f9c01b;
     font-weight: 600;
+    font-size: xx-large;
 }
 
 nav ul {
@@ -54,12 +55,13 @@ nav ul {
 }
 
 nav ul li {
+    font-size: large;
     display: inline-block;
     margin-left: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: 400;
 }
@@ -80,13 +82,14 @@ section {
 /* Hero Section */
 #home {
     background-color:
-        #131929;
+        #d5e0ff;
     /* Vibrant color */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #000;
+    font-size: x-large;
 }
 
 .hero-content h2,
@@ -156,11 +159,11 @@ h2 {
     font-size: 36px;
     margin-bottom: 40px;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 p {
-    color: #fff;
+    color: #000;
     font-size: large;
 }
 
@@ -245,7 +248,7 @@ p {
 /* Footer Styling */
 footer {
     margin-bottom: 0;
-    background-color: #040517;
+    background-color: #d5e0ff;
     padding: 20px;
     text-align: center;
     color: #fff;
