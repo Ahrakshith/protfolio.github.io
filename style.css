@@ -128,6 +128,8 @@ section {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .subheading {
@@ -142,6 +144,42 @@ section {
     color: #ccc;
     margin-bottom: 30px;
     line-height: 1.8;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-card {
+    background: #1A1A1A;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #B78CF7;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
 }
 
 .cv-btn {
