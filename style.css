@@ -152,8 +152,9 @@ section {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    align-items: stretch;
 }
 
 .about-card {
@@ -163,6 +164,10 @@ section {
     text-align: left;
     transition: transform 0.3s ease;
     animation: fadeIn 1.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
 }
 
 .about-card:hover {
@@ -180,17 +185,7 @@ section {
     font-size: 14px;
     color: #ccc;
     line-height: 1.6;
-}
-
-.cv-btn {
-    background-color: #4CAF50;
-    margin-top: 20px;
-}
-
-.cv-btn:hover {
-    background-color: #45a049;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+    flex-grow: 1;
 }
 
 /* Education Section Styles */
@@ -307,6 +302,17 @@ section {
 .twitter-btn:hover { background: #1a91da; }
 .facebook-btn { background: #1877F2; }
 .facebook-btn:hover { background: #166fe5; }
+
+.cv-btn {
+    background-color: #4CAF50;
+    margin-top: 20px;
+}
+
+.cv-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+}
 
 /* Animation */
 @keyframes fadeIn {
