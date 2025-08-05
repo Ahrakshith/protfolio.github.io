@@ -79,6 +79,7 @@ section {
     color: #B78CF7;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: transparentFade 2s ease-out;
 }
 
 .hero-content .subtitle {
@@ -121,7 +122,7 @@ section {
     color: #B78CF7;
     text-transform: uppercase;
     letter-spacing: 2px;
-    animation: fadeIn 1.5s ease-out;
+    animation: transparentFade 2s ease-out;
 }
 
 .about-content {
@@ -278,6 +279,17 @@ section {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes transparentFade {
+    from {
+        opacity: 0;
+        color: rgba(183, 140, 247, 0);
+    }
+    to {
+        opacity: 1;
+        color: #B78CF7;
     }
 }
 
